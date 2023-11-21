@@ -1,0 +1,105 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+body {
+    padding: 3rem;
+    background-color: burlywood;
+    background-image: url('../images/WoodBackground.png');
+    background-size: cover;
+    filter: brightness(75%)
+}
+h2{
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.dashboard-container {
+    background-color: rgba(222, 184, 135, 0.5);
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.card {
+    border: 10px solid rgba(222, 184, 135, 0.5); /* Specify border style */
+    border-radius: 8px;
+    overflow: hidden;
+    width: auto;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: burlywood;
+    display:flex;
+    align-items: center;
+}
+
+/* LED Status Indicator */
+.status-indicator {
+    display: inline-block;
+}
+
+.led-off {
+    color: #dc3545;
+}
+.led-on {
+    color: #28a745;
+}
+/* Lightbulb Icon */
+.fa-lightbulb {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* ... Other styles for the switch ... */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(38, 16, 0);
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: rgb(138, 255, 134)
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#ledIndicator,
+#autoModeIndicator {
+    display: inline-block;
+}
