@@ -6,8 +6,8 @@ import RPi.GPIO as GPIO
 from .models import Setting
 
 # Set up the GPIO channels
-LED_PIN = 17
-LDR_PIN = 4
+LED_PIN = 23
+LDR_PIN = 18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LDR_PIN, GPIO.IN)
 GPIO.setup(LED_PIN, GPIO.OUT)
