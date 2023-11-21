@@ -1,9 +1,9 @@
 # Replace this import
-# import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 # With this import for testing on a non-Raspberry Pi environment
-from gpiozero import LED
-from .models import Setting
+# from gpiozero import LED
+# from .models import Setting
 
 # Set up the GPIO channels
 LED_PIN = 17

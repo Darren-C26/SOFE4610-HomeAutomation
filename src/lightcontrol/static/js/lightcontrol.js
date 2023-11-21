@@ -1,8 +1,8 @@
 // Add an event listener for when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Grab references to the buttons and display elements in the HTML
-    var toggleButton = document.getElementById('toggleLed');
-    var autoModeButton = document.getElementById('autoModeLed');
+    var toggleButton = document.getElementById('toggleButton');
+    var autoModeButton = document.getElementById('toggleAutoMode');
     var ledStateDisplay = document.getElementById('ledState');
     var autoModeStateDisplay = document.getElementById('autoModeState');
     var ledIndicator = document.getElementById('ledIndicator');

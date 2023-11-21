@@ -47,7 +47,7 @@ h2{
 }
 
 .led-off {
-    color: #dc3545;
+    color: rgb(38, 16, 0);
 }
 .led-on {
     color: #28a745;

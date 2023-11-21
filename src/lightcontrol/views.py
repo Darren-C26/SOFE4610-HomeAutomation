@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
-#from .gpio_control import toggle_led, get_led_state, control_led_with_ldr
+from .gpio_control import toggle_led, get_led_state, control_led_with_ldr
 from .models import Setting
 
 def dashboard(request):
