@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>Light Automation</title>
+    </header>
+   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="{% static 'js/lightcontrol.js' %}" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Automation Assignment</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" >
+   </head>
+    <body>
+        <div class="container dashboard-container">
+            <h1>Dashboard for Light Control</h1>
+            <div class="card">
+                <div class="row">
+                    <div class="column">
+                        <i class="status-indicator led-off fas fa-lightbulb" id="ledIndicator"></i>
+                        <h2>LED Control</h2>
+                    </div>
+                    <div class="column">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleLED">
+                            <span class="slider"></span>
+                        </label>
+                        <p class="mb-0">LED State: <span id="ledState">Unknown</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <i class="status-indicator led-off fas fa-lightbulb" id="autoModeIndicator"></i>
+                        <h2>Auto</h2>
+                    </div>
+                    <div class="column">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleAutoMode">
+                            <span class="slider"></span>
+                        </label>
+                        <p class="mb-0">Auto Mode: <span id="autoModeState">Unknown</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
