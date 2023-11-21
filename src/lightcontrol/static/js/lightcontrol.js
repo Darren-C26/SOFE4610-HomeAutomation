@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateAutoModeState(data.auto_mode);
                 if (data.auto_mode) {
                     // If Auto Mode is turned on, start polling at intervals
-                    pollingInterval = setInterval(pollLdrAndUpdateLed, 5000); // Poll every 5 seconds
+                    pollingInterval = setInterval(pollLdrAndUpdateLed, 3000); // Poll every 3 seconds
                 } else {
                     // If Auto Mode is turned off, stop polling
                     clearInterval(pollingInterval);

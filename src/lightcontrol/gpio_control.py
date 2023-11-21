@@ -2,8 +2,8 @@
 import RPi.GPIO as GPIO
 
 # With this import for testing on a non-Raspberry Pi environment
-# from gpiozero import LED
-# from .models import Setting
+#from gpiozero import LED
+from .models import Setting
 
 # Set up the GPIO channels
 LED_PIN = 17
@@ -43,7 +43,7 @@ def get_led_state():
 
 def read_ldr():
     # Read the digital value (0 or 1) from the LDR's D0 pin
-    return GPIO.input(LDR_PIN)
+    return not GPIO.input(LDR_PIN)
 
 # Add this function to your gpio_control.py
 def control_led_with_ldr():

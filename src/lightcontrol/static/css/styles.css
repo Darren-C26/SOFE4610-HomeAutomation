@@ -5,7 +5,12 @@ body {
     background-color: burlywood;
     background-image: url('../images/WoodBackground.png');
     background-size: cover;
-    filter: brightness(75%)
+    filter: brightness(100%)
+}
+h1{
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 10px;
 }
 h2{
     margin-right: 20px;
@@ -13,11 +18,12 @@ h2{
 }
 
 .dashboard-container {
-    background-color: rgba(222, 184, 135, 0.5);
+    background-color: rgba(12, 10, 7, 0.8);
     max-width: 50%;
     height: auto;
     margin: auto;
     text-align: center;
+    padding: 20px;
 }
 
 .card {
@@ -26,6 +32,13 @@ h2{
     overflow: hidden;
     width: auto;
     margin: 20px auto;
+}
+
+.status-label {
+    border-radius: 8px;
+    width: auto;
+    margin: 10px;
+
 }
 
 .row {
@@ -50,7 +63,9 @@ h2{
     color: rgb(38, 16, 0);
 }
 .led-on {
-    color: #28a745;
+    color: #ffffff;
+    text-shadow: 0px 0px 20px rgb(230, 248, 255);
+
 }
 /* Lightbulb Icon */
 .fa-lightbulb {
