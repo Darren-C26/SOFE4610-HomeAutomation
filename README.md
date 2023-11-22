@@ -71,7 +71,42 @@ This project is aimed at providing a web-based interface for controlling and mon
 
 - #### [lightcontrol/static/js/lightcontrol.js](src/lightcontrol/static/js/lightcontrol.js)
 
-    JavaScript file for client-side functionality, controlling interactions on the dashboard.
+    This JavaScript file is responsible for controlling the interaction between your web page and the server, particularly for the light control functionality.
+
+    **DOMContentLoaded Event:**
+
+    The code begins by adding an event listener for the DOMContentLoaded event, which fires when the initial HTML document has been completely loaded and parsed.
+    Inside this event listener, it initializes variables for various HTML elements and sets up a polling interval variable.
+
+    **updateLedState Function:**
+
+    Updates the LED state display and indicator on the page.
+    It changes the text content, classes, and button styling based on the LED state.
+
+    **updateAutoModeState Function:**
+
+    Updates the Auto Mode state display and button text.
+    Similar to updateLedState, it modifies text content, classes, and button styling based on the Auto Mode state.
+
+    **pollLdrAndUpdateLed Function:**
+
+    Makes a GET request to the server endpoint /lightcontrol/control_led_with_ldr/.
+    Parses the JSON response and updates the LED state based on the response.
+    
+    **Event Listeners:**
+
+    Adds event listeners for the toggle button (toggleButton) and auto mode button (autoModeButton). These listeners make GET requests to the server to toggle the LED or auto mode.
+
+    The auto mode listener also starts polling at intervals when auto mode is turned on.
+
+    **Initial State Check:**
+
+    Performs initial checks of the LED state and Auto Mode state when the page loads.
+    Makes GET requests to /lightcontrol/state/ and /lightcontrol/auto_mode_state/.
+
+    **Window Unload Event:**
+
+    Adds an event listener for the window's beforeunload event to clear the polling interval when the window is about to be unloaded.
 
 - #### [lightcontrol/templates/dashboard.html](src/lightcontrol/templates/dashboard.html)
 
@@ -92,6 +127,20 @@ This project is aimed at providing a web-based interface for controlling and mon
 - #### [lightcontrol/gpio_control.py](src/lightcontrol/gpio_control.py)
 
     Python script for interacting with GPIO (General Purpose Input/Output) pins on a Raspberry Pi. It includes functions for toggling the LED, reading the LDR, and controlling the LED based on LDR readings.
+
+    **GPIO Setup:**
+
+    Sets up the GPIO channels (LED_PIN and LDR_PIN).
+    
+    **Functions:**
+
+    **toggle_led()**: Toggles the LED state based on the current auto mode setting.
+
+    **get_led_state()**: Gets the current LED state and updates the database if the hardware state differs from the database state.
+    
+    **read_ldr()**: Reads the digital value (0 or 1) from the LDR's D0 pin.
+    
+    **control_led_with_ldr()**: Controls the LED based on the LDR value when in auto mode.
 
 - #### [lightcontrol/models.py](src/lightcontrol/models.py)
 
@@ -123,6 +172,9 @@ Django management script for various tasks, such as running the development serv
 
 
 ## Wiring Schema
+
+![Wiring Schema](Image/WiringSchema.png)
+
 This is the wiring configuration when looking from the back
 ![Alt text](Images/WiringBackView.jpg)
 
