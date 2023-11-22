@@ -127,8 +127,11 @@ Django management script for various tasks, such as running the development serv
 
 ## Running the Project
 To begin running the project, you must first clone the respository and navigate into the folder:
-  git clone https://github.com/Darren-C26/SOFE4610-HomeAutomation.git
+```
+git clone https://github.com/Darren-C26/SOFE4610-HomeAutomation.git
   cd SOFE4610-HomeAutomation
+```
+  
 
 Run the database migrations:
   python3 manage.py makemigrations lightcontrol
