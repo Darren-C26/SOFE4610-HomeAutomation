@@ -122,6 +122,12 @@ Django management script for various tasks, such as running the development serv
 
 
 ## Wiring Schema
+This is the wiring configuration when looking from the back
+![Alt text](Images/WiringBackView.jpg)
+
+This is the top view of the wiring configuration
+![Alt text](Images/WIringTopView.jpg)
+
 
 ## Installation
 To begin running the project, you must first clone the respository and navigate into the folder:
@@ -171,12 +177,6 @@ More requests with the auto mode on
 
 This is a photo display that the light does turn on
 ![Alt text](Images/LightOn.jpg)
-
-This is the wiring configuration when looking from the back
-![Alt text](Images/WiringBackView.jpg)
-
-This is the top view of the wiring configuration
-![Alt text](Images/WIringTopView.jpg)
 
 
 ## Video Demo
