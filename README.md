@@ -129,19 +129,26 @@ Django management script for various tasks, such as running the development serv
 To begin running the project, you must first clone the respository and navigate into the folder:
 ```
 git clone https://github.com/Darren-C26/SOFE4610-HomeAutomation.git
-  cd SOFE4610-HomeAutomation
+cd SOFE4610-HomeAutomation
 ```
   
 
 Run the database migrations:
-  python3 manage.py makemigrations lightcontrol
-  pythong manage.py migrate
+```
+ python3 manage.py makemigrations lightcontrol
+pythong manage.py migrate
+```
+ 
 
 To start the server
-  python manage.py runserver 0.0.0.0:8000
+```
+python manage.py runserver 0.0.0.0:8000
+```
 
 Open the IP address in the web browser
-  http://<Raspberry_Pi_IP>:8000
+```
+http://<Raspberry_Pi_IP>:8000
+```
 
 
 ## Screenshots
