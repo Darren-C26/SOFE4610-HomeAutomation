@@ -173,7 +173,7 @@ Django management script for various tasks, such as running the development serv
 
 ## Wiring Schema
 
-![Wiring Schema](Image/WiringSchema.png)
+![Wiring Schema](Images/WiringSchema.png)
 
 This is the wiring configuration when looking from the back
 ![Alt text](Images/WiringBackView.jpg)
