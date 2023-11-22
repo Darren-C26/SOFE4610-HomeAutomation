@@ -16,7 +16,7 @@ This project is aimed at providing a web-based interface for controlling and mon
 
 - [src](#src)
   - [automode](#automode)
-    - [__init__.py](#automodeinitpy)
+    - [`__init__`.py](#automodeinitpy)
     - [settings.py](#automodesettingspy)
     - [urls.py](#automodeurlspy)
     - [wsgi.py](#automodewsgipy)
@@ -29,7 +29,7 @@ This project is aimed at providing a web-based interface for controlling and mon
         - [lightcontrol.js](#lightcontrolstaticjslightcontroljs)
     - [templates](#lightcontroltemplates)
       - [dashboard.html](#lightcontroltemplatesdashboardhtml)
-    - [__init__.py](#lightcontrolinitpy)
+    - [`__init__`.py](#lightcontrolinitpy)
     - [admin.py](#lightcontroladminpy)
     - [apps.py](#lightcontrolappspy)
     - [gpio_control.py](#lightcontrolgpio_controlpy)
@@ -43,70 +43,71 @@ This project is aimed at providing a web-based interface for controlling and mon
 
 ## File Descriptions
 
-### [Automode](src/automode/)
+### [automode](src/automode/)
 <hr>
 
-#### [automode/__init__.py](src/automode/__init__.py)
+- #### [automode/`__init__`.py](src/automode/__init__.py)
 
-This file is a placeholder indicating that the `automode` directory should be treated as a Python package.
+    This file is a placeholder indicating that the `automode` directory should be treated as a Python package.
 
-#### [automode/settings.py](src/automode/settings.py)
+- #### [automode/settings.py](src/automode/settings.py)
 
-Configuration settings for the Django project. Includes database configuration, time zone settings, and more.
+    Configuration settings for the Django project. Includes database configuration, time zone settings, and more.
 
-#### [automode/urls.py](src/automode/urls.py)
+- #### [automode/urls.py](src/automode/urls.py)
 
-Defines the URL patterns for the Django project.
+    Defines the URL patterns for the Django project.
 
-#### [automode/wsgi.py](src/automode/wsgi.py)
+- #### [automode/wsgi.py](src/automode/wsgi.py)
 
-Configuration for the WSGI (Web Server Gateway Interface) to run the Django application.
+    Configuration for the WSGI (Web Server Gateway Interface) to run the Django application.
 
 ### [lightcontrol](src/lightcontrol/)
+<hr>
 
-#### [lightcontrol/static/css/styles.css](src/lightcontrol/static/css/styles.css)
+- #### [lightcontrol/static/css/styles.css](src/lightcontrol/static/css/styles.css)
 
-CSS file for styling the web pages.
+    CSS file for styling the web pages.
 
-#### [lightcontrol/static/js/lightcontrol.js](src/lightcontrol/static/js/lightcontrol.js)
+- #### [lightcontrol/static/js/lightcontrol.js](src/lightcontrol/static/js/lightcontrol.js)
 
-JavaScript file for client-side functionality, controlling interactions on the dashboard.
+    JavaScript file for client-side functionality, controlling interactions on the dashboard.
 
-#### [lightcontrol/templates/dashboard.html](src/lightcontrol/templates/dashboard.html)
+- #### [lightcontrol/templates/dashboard.html](src/lightcontrol/templates/dashboard.html)
 
-HTML template for the main dashboard page.
+    HTML template for the main dashboard page.
 
-#### [lightcontrol/__init__.py](src/lightcontrol/__init__.py)
+- #### [lightcontrol/`__init__`.py](src/lightcontrol/__init__.py)
 
-Similar to the `__init__.py` file in `automode`, this file indicates that `lightcontrol` is a Python package.
+    Similar to the `__init__.py` file in `automode`, this file indicates that `lightcontrol` is a Python package.
 
-#### [lightcontrol/admin.py](src/lightcontrol/admin.py)
+- #### [lightcontrol/admin.py](src/lightcontrol/admin.py)
 
-Configuration for Django's admin interface.
+    Configuration for Django's admin interface.
 
-#### [lightcontrol/apps.py](src/lightcontrol/apps.py)
+- #### [lightcontrol/apps.py](src/lightcontrol/apps.py)
 
-Configuration for the Django app.
+    Configuration for the Django app.
 
-#### [lightcontrol/gpio_control.py](src/lightcontrol/gpio_control.py)
+- #### [lightcontrol/gpio_control.py](src/lightcontrol/gpio_control.py)
 
-Python script for interacting with GPIO (General Purpose Input/Output) pins on a Raspberry Pi. It includes functions for toggling the LED, reading the LDR, and controlling the LED based on LDR readings.
+    Python script for interacting with GPIO (General Purpose Input/Output) pins on a Raspberry Pi. It includes functions for toggling the LED, reading the LDR, and controlling the LED based on LDR readings.
 
-#### [lightcontrol/models.py](src/lightcontrol/models.py)
+- #### [lightcontrol/models.py](src/lightcontrol/models.py)
 
-Defines the data models for the Django app, including the `Setting` model for storing LED and auto mode states.
+    Defines the data models for the Django app, including the `Setting` model for storing LED and auto mode states.
 
-#### [lightcontrol/tests.py](src/lightcontrol/tests.py)
+- #### [lightcontrol/tests.py](src/lightcontrol/tests.py)
 
-Test cases for the Django app.
+    Test cases for the Django app.
 
-#### [lightcontrol/urls.py](src/lightcontrol/urls.py)
+- #### [lightcontrol/urls.py](src/lightcontrol/urls.py)
 
-URL patterns specific to the `lightcontrol` app.
+    URL patterns specific to the `lightcontrol` app.
 
-#### [lightcontrol/views.py](src/lightcontrol/views.py)
+- #### [lightcontrol/views.py](src/lightcontrol/views.py)
 
-Defines the views (controller functions) for handling HTTP requests in the Django app.
+    Defines the views (controller functions) for handling HTTP requests in the Django app.
 
 ### [migrations/](src/migrations)
 
