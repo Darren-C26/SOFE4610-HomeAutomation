@@ -173,13 +173,22 @@ Django management script for various tasks, such as running the development serv
 
 ## Wiring Schema
 
-![Wiring Schema](Images/WiringSchema.png)
+The following diagram provides the wiring schematic used in this assignment for the practioner to replicate so they can run the program.
 
-This is the wiring configuration when looking from the back
-![Alt text](Images/WiringBackView.jpg)
+<p align="center">
+Wiring Schematic</p>
 
-This is the top view of the wiring configuration
-![Alt text](Images/WIringTopView.jpg)
+![Wiring Schema](Images/WiringSchema.png)|
+|-|
+
+
+Sample pictures of our configuration:
+
+(Back View)
+![Back View](Images/WiringBackView.jpg)
+
+(Top View)
+![Top View](Images/WIringTopView.jpg)
 
 
 ## Installation
