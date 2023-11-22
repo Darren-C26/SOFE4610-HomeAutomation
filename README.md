@@ -158,7 +158,7 @@ http://<Raspberry_Pi_IP>:8000
 
 
 ## Screenshots
-This is what the dashroom looks like 
+This is what the dashboard looks like 
 ![Alt text](Images/Dashboard.png)
 
 When the button is clicked, it toggles the other side and displays a green colour when the button is switched on
@@ -181,4 +181,6 @@ This is a photo display that the light does turn on
 
 
 ## Video Demo
-[Link to Demo Video](https://drive.google.com/file/d/1WF712a_QA-dXJBR5Bx1M7XvX1BM4qkeC/view?usp=share_link)
+
+https://github.com/Darren-C26/SOFE4610-HomeAutomation/assets/47041816/5f94d2e4-21d2-440c-99a1-068f26056549
+
