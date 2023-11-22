@@ -139,7 +139,7 @@ cd SOFE4610-HomeAutomation
 
 Run the database migrations:
 ```
- python3 manage.py makemigrations lightcontrol
+python3 manage.py makemigrations lightcontrol
 pythong manage.py migrate
 ```
  
