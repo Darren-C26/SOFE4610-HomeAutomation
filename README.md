@@ -128,14 +128,32 @@ Django management script for various tasks, such as running the development serv
 ## Running the Project
 
 ## Screenshots
+This is what the dashroom looks like 
 ![Alt text](Images/Dashboard.png)
+
+WHen the button is clicked, it toggles the other side and displays a green colour when the button is switched on
 ![Alt text](Images/DashboardLightOff.png)
+
+Screenshot of the dashboard with the server running
 ![Alt text](Images/ServerRunning.png)
+
+Here, the button is clicked and there is a request to the server to turn on the light
 ![Alt text](Images/ServerLightOn.png)
+
+WHen the auto mode is turned on, you can see the various requests that the server is receiving as it detects outside light or not
 ![Alt text](Images/ServerAutoOn.png)
+
+More requests with the auto mode on
 ![Alt text](Images/AutoModeOn.png)
+
+This is a photo display that the light does turn on
 ![Alt text](Images/LightOn.jpg)
+
+This is the wiring configuration when looking from the back
 ![Alt text](Images/WiringBackView.jpg)
+
+This is the top view of the wiring configuration
 ![Alt text](Images/WIringTopView.jpg)
+
 
 ## Video Demo
