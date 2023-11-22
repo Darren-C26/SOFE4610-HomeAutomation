@@ -2,6 +2,8 @@
 
 This project is aimed at providing a web-based interface for controlling and monitoring an LED light, with additional features such as auto mode based on a Light Dependent Resistor (LDR). The application is built using Django for the backend, and it includes a simple dashboard with JavaScript for interactive user controls.
 
+Note: Credits to "IoT Hands-On Approach" by A.
+Bahga and V. Madisetti, as well to some of our peers in **IoT Analysis & Design** for helping us get the project set up.
 
 ## Table of Contents
 - [File Structure](#file-structure)
@@ -127,10 +129,22 @@ This project is aimed at providing a web-based interface for controlling and mon
 - #### [lightcontrol/gpio_control.py](src/lightcontrol/gpio_control.py)
 
     Python script for interacting with GPIO (General Purpose Input/Output) pins on a Raspberry Pi. It includes functions for toggling the LED, reading the LDR, and controlling the LED based on LDR readings.
+    
+    <br>
 
     **GPIO Setup:**
 
-    Sets up the GPIO channels (LED_PIN and LDR_PIN).
+    **LED_PIN** (Pin 23): Configures GPIO pin 23 to control an LED.
+
+    **LDR_PIN** (Pin 18): Sets GPIO pin 18 to read an LDR's light-dependent resistance.
+
+    **GPIO.setmode(GPIO.BCM)**: Switches GPIO pin numbering to Broadcom SOC channel mode.
+
+    **GPIO.setup(LDR_PIN, GPIO.IN)**: Configures LDR_PIN as an input for reading light intensity.
+
+    **GPIO.setup(LED_PIN, GPIO.OUT)**: Configures LED_PIN as an output for controlling an LED.
+    
+    <br>    
     
     **Functions:**
 
