@@ -128,6 +128,14 @@ Django management script for various tasks, such as running the development serv
 ## Running the Project
 
 ## Screenshots
-![Alt text](Images/Dashboard.png =100x200)
+![Alt text](Images/Dashboard.png)
+![Alt text](Images/DashboardLightOff.png)
+![Alt text](Images/ServerRunning.png)
+![Alt text](Images/ServerLightOn.png)
+![Alt text](Images/ServerAutoOn.png)
+![Alt text](Images/AutoModeOn.png)
+![Alt text](Images/LightOn.jpg)
+![Alt text](Images/WiringBackView.jpg)
+![Alt text](Images/WIringTopView.jpg)
 
 ## Video Demo
