@@ -131,7 +131,7 @@ Django management script for various tasks, such as running the development serv
 This is what the dashroom looks like 
 ![Alt text](Images/Dashboard.png)
 
-WHen the button is clicked, it toggles the other side and displays a green colour when the button is switched on
+When the button is clicked, it toggles the other side and displays a green colour when the button is switched on
 ![Alt text](Images/DashboardLightOff.png)
 
 Screenshot of the dashboard with the server running
@@ -140,7 +140,7 @@ Screenshot of the dashboard with the server running
 Here, the button is clicked and there is a request to the server to turn on the light
 ![Alt text](Images/ServerLightOn.png)
 
-WHen the auto mode is turned on, you can see the various requests that the server is receiving as it detects outside light or not
+When the auto mode is turned on, you can see the various requests that the server is receiving as it detects outside light or not
 ![Alt text](Images/ServerAutoOn.png)
 
 More requests with the auto mode on
