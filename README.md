@@ -45,6 +45,7 @@ This project is aimed at providing a web-based interface for controlling and mon
 
 ### [Automode](src/automode/)
 <hr>
+
 #### [automode/__init__.py](src/automode/__init__.py)
 
 This file is a placeholder indicating that the `automode` directory should be treated as a Python package.
