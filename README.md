@@ -131,53 +131,73 @@ This is the top view of the wiring configuration
 
 
 ## Installation
-To begin running the project, you must first clone the respository and navigate into the folder:
-```
-git clone https://github.com/Darren-C26/SOFE4610-HomeAutomation.git
-cd SOFE4610-HomeAutomation
-```
+1. Clone the respository and navigate into the folder:
+    ```
+    git clone https://github.com/Darren-C26/SOFE4610-HomeAutomation.git
+    cd SOFE4610-HomeAutomation/src
+    ```
   
 
-Run the database migrations:
-```
-python3 manage.py makemigrations lightcontrol
-pythong manage.py migrate
-```
+2. Run the database migrations:
+    ```
+    python3 manage.py makemigrations lightcontrol
+    pythong manage.py migrate
+    ```
  
 ## Running the Project
 
-To start the server
-```
-python manage.py runserver 0.0.0.0:8000
-```
+1. Start the server
+    ```
+    python manage.py runserver
+    ```
 
-Open the IP address in the web browser
-```
-http://<Raspberry_Pi_IP>:8000
-```
+2. Open the following address in a web browser
+    ```
+    http://<Raspberry_IP>:8000
+    ```
 
 
 ## Screenshots
-This is what the dashboard looks like 
-![Alt text](Images/Dashboard.png)
+The following includes screen captures of the application.
 
-When the button is clicked, it toggles the other side and displays a green colour when the button is switched on
-![Alt text](Images/DashboardLightOff.png)
+<p align="center">
+Dashboard Overview
 
-Screenshot of the dashboard with the server running
-![Alt text](Images/ServerRunning.png)
+![Dashboard Overview](Images/Dashboard.png)</p>|
+|-|
 
-Here, the button is clicked and there is a request to the server to turn on the light
-![Alt text](Images/ServerLightOn.png)
+<p align="center">
+Button Toggle
 
-When the auto mode is turned on, you can see the various requests that the server is receiving as it detects outside light or not
+![Button Toggle](Images/DashboardLightOff.png)</p>|
+|-|
+
+<p align="center">
+Server Display
+
+![Server Display](Images/ServerRunning.png)</p>|
+|-|
+
+<p align="center">
+Light On Request
+
+![Alt text](Images/ServerLightOn.png)</p>|
+|-|
+
+<p align="center">
+AutoMode Turned On
+
 ![Alt text](Images/ServerAutoOn.png)
 
-More requests with the auto mode on
-![Alt text](Images/AutoModeOn.png)
 
-This is a photo display that the light does turn on
-![Alt text](Images/LightOn.jpg)
+![Alt text](Images/AutoModeOn.png)</p>|
+|-|
+
+<p align="center">
+LED Light on AutoMode
+
+![Alt text](Images/LightOn.jpg)</p>|
+|-|
 
 
 ## Video Demo
